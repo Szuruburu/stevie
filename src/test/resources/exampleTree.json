@@ -7,11 +7,11 @@
         "answer": "Skontaktuj sie z pomoca techniczna"
       },
       "onNo": {
-        "answer": "Podlacz wtyczke debilu!"
+        "answer": "Podlacz wtyczke!"
       }
     },
     "onNo": {
-      "answer": "Zamnij tę jebana klape!!"
+      "answer": "Zamknij tę klape!!"
     }
   }
 }

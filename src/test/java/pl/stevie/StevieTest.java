@@ -13,12 +13,12 @@ public class StevieTest {
   @SneakyThrows(IOException.class)
   public void shouldConvertTreeToJson(){
 
-    Branch podlaczWtyczne = new Leaf("Podlacz wtyczke debilu!");
+    Branch podlaczWtyczne = new Leaf("Podlacz wtyczke!");
     Branch pomocTechniczna = new Leaf("Skontaktuj sie z pomoca techniczna");
 
     Branch czyPodlaczylesDoPradu = new YesNoBranch("Czy podlaczyles do pradu", pomocTechniczna, podlaczWtyczne);
 
-    Branch zamknijKlape = new Leaf("Zamnij tę jebana klape!!");
+    Branch zamknijKlape = new Leaf("Zamknij tę klape!!");
     Branch czyZamknalesKlape = new YesNoBranch("Czy zamknałes klape", czyPodlaczylesDoPradu, zamknijKlape);
 
     DecissionTree zepsutaPralkaTree = new DecissionTree(czyZamknalesKlape);
