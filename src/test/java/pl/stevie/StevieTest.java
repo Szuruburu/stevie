@@ -10,7 +10,6 @@ import org.junit.Test;
 public class StevieTest {
 
   @Test
-  @SneakyThrows(IOException.class)
   public void shouldConvertTreeToJson(){
 
     Branch podlaczWtyczne = new Leaf("Podlacz wtyczke!");
