@@ -10,6 +10,7 @@ import org.junit.Test;
 public class StevieTest {
 
   @Test
+  @SneakyThrows(IOException.class)
   public void shouldConvertTreeToJson(){
 
     Branch podlaczWtyczne = new Leaf("Podlacz wtyczke debilu!");
@@ -26,7 +27,8 @@ public class StevieTest {
 
     System.out.println("Decision tree json:" + decissionTreeInJson);
 
-    //Wystarczy teraz stringa decissionTreeInJson
+    //Wystarczy teraz stringa decissionTreeInJson zapisać do pliku
+    //Files.write(Paths.get("decissionTree.json"), decissionTreeInJson.getBytes());
 
   }
 
